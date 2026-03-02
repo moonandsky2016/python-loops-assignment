@@ -1,9 +1,9 @@
 def process_scores(students):
-    averages={}
+    averages={}#{["Alice"]:85+90+70/3,["David"]:95+90+93/3,["Bob"]:72+85+77/3}
     for name,score in students.items():
         if(len(score)>0):
-            avg=sum(score)/len(score)
-            averages[name]=round(avg,2)
+            avg=sum(score)/len(score)#85+90+70/3---->95+90+93/3---->72+85+77/3
+            averages[name]=round(avg,2)#averages["Alice"]=85+90+70/3---->
         else:
             averages[name]=0.00
     return averages
@@ -24,7 +24,6 @@ def classify_grades(averages):
 
 def generate_report(classified,passing_avg=70):
     print("===== Student Grade Report =====")
-    result={}
     pass_count=0
     for name,(avg,grade) in classified.items():
         if(avg>passing_avg):
@@ -45,7 +44,7 @@ def generate_report(classified,passing_avg=70):
 students = {"Alice":[85,90,70],"David":[95,90,93],"Bob":[72,85,77]}
 averages = process_scores(students)
 grades=classify_grades(averages)
-result=generate_report(grades,75)
+generate_report(grades,75)
 
 
 # print(averages)
