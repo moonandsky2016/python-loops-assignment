@@ -1,4 +1,4 @@
-# Name: [Your Name]
+# Name: Sindhu Kannan
 # Roll Number: [Your Roll Number]
 # Assignment: Python Loops & Automation - Subjective Question
 
