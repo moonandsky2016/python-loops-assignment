@@ -8,7 +8,7 @@ new_book = {
     "in_stock": True
 }
 
-# Task 1 — Read the inventory
+# Task 1 — Read the inventory 1
 with open("inventory.json", "r") as file:
     inventory = json.load(file)
 
